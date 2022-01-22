@@ -9,13 +9,10 @@ token = "EAAMXH4prhKoBANHzdDT0m7WyEoAcyuan8sUhM6UN1NWA9Yt9QvmwRfIsDoQWb8gbcpkBhN
 #making an empty list so we can append the list of id,name,created_name from the JSON for every post made by the user
 b = []
 
-# accesing the GRAPHAPI
 graph = facebook.GraphAPI(token)
 # Making a variable 
 like = graph.get_object('/me/posts',fields='created_time,id,name')
 a= list(like.values())
-print(like)
-
 
 # Fisrt list of dicts is converted into a list of lists b as mentioned 10 
 for i in range(len(a[0])):
