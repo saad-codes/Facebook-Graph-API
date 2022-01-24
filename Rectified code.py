@@ -1,4 +1,5 @@
 import facebook
+from numpy import ones_like
 from sqlalchemy import (create_engine, MetaData, Table, Column, String)
 meta_data = MetaData()
 
@@ -102,7 +103,7 @@ like_info = graph.get_object('/me/likes',fields='id,name,created_time')
 for one_like in like_info['data']:
     def like_name():
         try:
-            return one_post['name']
+            return ones_like['name']
         except:
             return 'No_Name'
         
