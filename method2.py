@@ -4,7 +4,7 @@ from sqlalchemy import (create_engine, MetaData, Table, Column, String)
 meta_data = MetaData()
 
 # accesing token from FACEBOOK DEVELOPER ENGINE 
-token = "EAAXUDaw917sBABnrthOPr7Mnx3zVlBOGQ2c6sc0Ij7L1nhw5dqvpZC7hjbmnZBUyubfwdQZBQMT4eDV43UnGurqGioAAdJ8rsvxUGeLJW4zBSWyiua8FUqWnVqqqMCesx60yhZBD6tG4kVZAQGNETmQfexP4n6BlFclmyVEe4sjDtSsZC9MgJAtBbHNVOkNAxIxFxgZAYZAIWthrDXhTPQGBOZCvx4HhckqiYLpJ7cMIQ46aktUqEGjJky7LqiRhWiUAZD" 
+token = "" 
 graph = facebook.GraphAPI(token)
 # Creating engine and connecting Database
 
